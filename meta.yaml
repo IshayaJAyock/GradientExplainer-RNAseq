@@ -1,0 +1,31 @@
+package:
+  name: gradientexplainer_rnaseq
+  version: "0.0.1"
+
+source:
+  git_url: https://github.com/MaxKelsen/GradientExplainer-RNAseq
+
+build:
+  script: "python -m pip install -e . --no-deps -vv"
+
+requirements:
+  host:
+    - python>=3.7
+    - pip
+    - setuptools
+
+  run:
+    - python>=3.7
+    - pip
+    - numpy<1.17,>=1.14.5
+    - pandas
+    - tensorflow
+    - smote-variants
+    - shap
+    - umap-learn
+    - matplotlib
+    - seaborn
+
+about:
+  home: https://github.com/MaxKelsen/GradientExplainer-RNAseq
+  description: Verifying explainability of a deep learning tissue classifier trained on RNA-seq data

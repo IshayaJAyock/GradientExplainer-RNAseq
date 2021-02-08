@@ -1,0 +1,8 @@
+pandas
+smote-variants
+tensorflow
+shap
+umap-learn
+matplotlib
+seaborn
+numpy<1.17,>=1.14.5
